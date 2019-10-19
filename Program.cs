@@ -21,10 +21,10 @@ namespace Blueprint_Editor {
                 var json = BpStringToJson(base64BpString);
 
                 json = json.Replace("stone-path", "landfill");
-                json = json.Replace("concrete", "landfill");
+                json = json.Replace("refined-hazard-concrete", "landfill");
                 json = json.Replace("refined-concrete", "landfill");
                 json = json.Replace("hazard-concrete", "landfill");
-                json = json.Replace("refined-hazard-concrete", "landfill");
+                json = json.Replace("concrete", "landfill");
 
                 base64BpString = "0" + JsonToBpString(json);
 
